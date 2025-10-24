@@ -100,14 +100,14 @@ main.empty{background:transparent}
 <body>
 <header class="topbar">
   <button class="menu-btn" id="menuToggle" aria-label="Buka menu">&#9776;</button>
-  <div class="title-top">Apk Unband By ValfarStore</div>
+  <div class="title-top">Website Unband By ValfarStore</div>
 </header>
 
 <!-- LOCK MODAL -->
 <div id="lockModal" role="dialog" aria-modal="true" aria-labelledby="lockTitle">
   <div class="lock-card" id="lockCard" aria-live="polite">
     <h2 id="lockTitle">Akses Dikunci</h2>
-    <p>Ini Web 100% gratis, silahkan join grup WA dan share link web ini untuk membuka akses ✅</p>
+    <p>Ini Web 100% gratis, silahkan join channel wa dan share link web ini untuk membuka akses ✅</p>
     
     <button id="joinBtn" class="btn btn-full">1. Join Channel WhatsApp</button>
     <button id="shareBtn" class="btn btn-full">2. Share Website</button>
@@ -169,7 +169,7 @@ function updateProgress(){
   if(p===100) setTimeout(()=>lockModal.style.display='none',500);
 }
 joinBtn.addEventListener('click', ()=>{
-  window.open("https://chat.whatsapp.com/I6lsiwlPn1PBLOQ9wcNqLM", "_blank");
+  window.open("https://whatsapp.com/channel/0029Vb6TV3p8KMqsAj1ZQK3X", "_blank");
   joined=true; updateProgress();
 });
 shareBtn.addEventListener('click', ()=>{
