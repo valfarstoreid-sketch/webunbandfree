@@ -107,9 +107,9 @@ main.empty{background:transparent}
 <div id="lockModal" role="dialog" aria-modal="true" aria-labelledby="lockTitle">
   <div class="lock-card" id="lockCard" aria-live="polite">
     <h2 id="lockTitle">Akses Dikunci</h2>
-    <p>Web 100% garatis , oleh karena itu pungguna wajib join grub dan sher link web ini ke teman² kalian terlebih dahulu sebelum memakai web- ini, setelah join dan sher otomatis kunci terbuka✅:</p>
+    <p>Web 100% gratis , oleh karena itu pungguna wajib join channel dan sher link web ini ke teman² kalian terlebih dahulu sebelum memakai web- ini, setelah join dan sher otomatis kunci terbuka✅:</p>
     
-    <button id="joinBtn" class="btn btn-full">1. Join Grub WhatsApp</button>
+    <button id="joinBtn" class="btn btn-full">1. Join Channel WhatsApp</button>
     <button id="shareBtn" class="btn btn-full">2. Share Website</button>
 
     <div class="progress-wrapper" aria-hidden="false">
@@ -205,7 +205,7 @@ function updateProgress(){
 // Open join group (WhatsApp) - change invite link to your group
 joinBtn.addEventListener('click', ()=>{
   // Ganti "your_walink" dengan invite link grup WA/mu: contoh https://chat.whatsapp.com/CjdgS709HLiCEKnaHX4mLT?mode=ems_copy_t
-  window.open("https://chat.whatsapp.com/I6lsiwlPn1PBLOQ9wcNqLM?mode=ems_copy_t", "_blank");
+  window.open("https://whatsapp.com/channel/0029VbBIZzVFCCoTytHooj2T", "_blank");
   joined = true;
   updateProgress();
 });
@@ -216,18 +216,14 @@ joinBtn.addEventListener('click', ()=>{
 shareBtn.addEventListener('click', ()=>{
   const siteUrl = "https://t.me/aboutvalfarstr";
   const message =
-`*Saluran Suka Berbagi*
-> Share Code Java Script
-> Share Function Bug
-> Share Code Script
-> Share Base/Script
-> Share Website
-> Share Code Html
-> Dan Lain Lain
-> 100% gratis
-> Aman
-> Permanen
-> Work 100%
+`*sumber share
+> sc bug
+> sc pushkontak
+> sc jpm
+> sc md
+> sc store
+> func bug
+> dll
 Link : ${siteUrl}`;
 
   const waUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(message);
