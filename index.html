@@ -127,7 +127,7 @@ main.empty{background:transparent}
       <ul class="submenu" id="contactSubmenu">
         <li><a href="https://wa.me/6285782084770" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
         <li><a href="https://t.me/valfarstr" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
-        <li><a href="https://instagram.com/di" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://www.instagram.com/valfarstoreid_" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
         <li><a href="https://youtube.com/@valfarstore" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
       </ul>
     </li>
@@ -138,7 +138,7 @@ main.empty{background:transparent}
 <div class="overlay" id="overlay" aria-hidden="true"></div>
 
 <div class="robot-box">
-  <div class="robot-face"><img src="https://i.imgur.com/sgIjNk8.jpeg" alt="Logo Robot" style="max-height:100%; max-width:100%; border-radius:50%;"></div>
+  <div class="robot-face"><img src="https://mathematical-lime-oawgfx31ve.edgeone.app/020e1728dd761d379945a62685194f56.jpg" alt="Logo Robot" style="max-height:100%; max-width:100%; border-radius:50%;"></div>
   <div class="robot-title-normal">Unban WhatsApp</div>
 </div>
 
@@ -169,7 +169,7 @@ function updateProgress(){
   if(p===100) setTimeout(()=>lockModal.style.display='none',500);
 }
 joinBtn.addEventListener('click', ()=>{
-  window.open("https://whatsapp.com/channel/0029Vb6TV3p8KMqsAj1ZQK3X", "_blank");
+  window.open("https://whatsapp.com/channel/0029VbBIZzVFCCoTytHooj2T", "_blank");
   joined=true; updateProgress();
 });
 shareBtn.addEventListener('click', ()=>{
@@ -204,7 +204,15 @@ function setStatus(t){statusEl.textContent=t;}
 function normalizeNumber(n){if(!n)return n; const s=n.trim().replace(/\s+/g,''); if(/^[0][0-9]+$/.test(s)) return '62'+s.slice(1); if(/^\+/.test(s)) return s; return s;}
 function buildTemplate(nomor,alasan){
   const tampilNomor = (nomor.startsWith('+')||nomor.startsWith('62'))? nomor:('+'+nomor);
-  if(alasan==="Opsi Permanen") return {to:'support@support.whatsapp.com',subject:'[Banding WhatsApp] Permohonan',body:`Halo Tim WhatsApp\nSaya ingin banding untuk akun saya (${tampilNomor}) yang diblokir permanen.`};
+  if(alasan==="Opsi Permanen") return {to:'support@support.whatsapp.com',subject:'[Banding WhatsApp] Permohonan',body:`
+Dear WhatsApp Support Team,
+I am writing to formally appeal the permanent ban on my WhatsApp number: [(${tampilNomor}) ].
+I recently received a notice stating that my account has been permanently banned due to spam-related activity. However, I strongly believe this may have been a misunderstanding or an error in the automated detection system.
+I use WhatsApp for [personal and/or business] communication and have always tried to follow WhatsApp’s Terms of Service and policies. If there was any activity that was mistakenly flagged as a violation, I sincerely apologize and kindly request clarification so I can ensure it doesn’t happen again.
+I truly rely on this number for important communications, and the ban has caused significant disruption. I respectfully request that you review my case again and consider lifting the permanent ban or allowing me the opportunity to resolve this issue.
+Thank you for your time and support. I look forward to your understanding and a positive resolution.
+Sincerely,
+[valfar]`};
   return {to:'support@support.whatsapp.com',subject:'Banding WhatsApp',body:`Halo Tim WhatsApp\nNomor: ${tampilNomor}\nAlasan: Disalah gunakan. Terima kasih.`};
 }
 function buildMailtoUrl(t){return `mailto:${enc(t.to)}?subject=${enc(t.subject)}&body=${enc(t.body)}`;}
